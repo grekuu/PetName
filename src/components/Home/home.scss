@@ -1,0 +1,40 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  h1 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: #2b303a;
+  }
+
+  .name-list {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #b7d1da;
+    list-style: none;
+    padding: 0;
+
+    li {
+      color: #2b303a;
+      border: 1px solid #b7d1da;
+      border-radius: 0.375rem;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      padding: 15px 0px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+
+  .generate-btn {
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}

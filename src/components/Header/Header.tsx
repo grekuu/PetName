@@ -5,7 +5,7 @@ import './header.scss';
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" bg="primary" data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="#home" className="brand-container">
           <LuCat className="brand-logo" /> <span className="brand-name">IMIEDLAZWIERZAKA</span>
