@@ -10,7 +10,7 @@ const Footer = () => {
     <Navbar fixed="bottom" expand="lg" bg="primary" data-bs-theme="dark">
       <Container>
         <Navbar.Text className="copyright-text">
-          Copyright © {currentYear} <a href="https://www.imiedlazwierzaka.org">ImieDlaZwierzaka.org</a>
+          Copyright © {currentYear} <a href="https://imiedlazwierzaka.online/">Imiedlazwierzaka.online</a>
         </Navbar.Text>
       </Container>
     </Navbar>

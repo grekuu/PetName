@@ -28,17 +28,21 @@ const Home = () => {
   }, [randomNames]);
 
   return (
-    <Container className="home-container">
-      <h1>IMIONA DLA ZWIERZAKÓW</h1>
-      <ul className="name-list">
-        {selectedNames.map((name, index) => (
-          <li key={index}>{name}</li>
-        ))}
-      </ul>
-      <Button variant="primary" className="generate-btn" onClick={selectRandomNames}>
-        Losuj
-      </Button>
-    </Container>
+    <>
+      <div id="adsense-side" className="adsense-unit"></div>
+      <Container className="home-container">
+        <h1>IMIONA DLA ZWIERZAKÓW</h1>
+        <ul className="name-list">
+          {selectedNames.map((name, index) => (
+            <li key={index}>{name}</li>
+          ))}
+        </ul>
+        <Button variant="primary" className="generate-btn" onClick={selectRandomNames}>
+          Losuj
+        </Button>
+      </Container>
+      <div id="adsense-side" className="adsense-unit"></div>
+    </>
   );
 };
 
