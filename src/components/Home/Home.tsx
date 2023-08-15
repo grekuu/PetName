@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import './home.scss';
 
 import jsonData from '../../common/data.json';
+import { Adsense } from '@ctrl/react-adsense';
 
 const Home = () => {
   const [randomNames, setRandomNames] = useState<string[]>([]);
@@ -28,17 +29,26 @@ const Home = () => {
   }, [randomNames]);
 
   return (
-    <Container className="home-container">
-      <h1>IMIONA DLA ZWIERZAKÓW</h1>
-      <ul className="name-list">
-        {selectedNames.map((name, index) => (
-          <li key={index}>{name}</li>
-        ))}
-      </ul>
-      <Button variant="primary" className="generate-btn" onClick={selectRandomNames}>
-        Losuj
-      </Button>
-    </Container>
+    <>
+      <Adsense
+        client="ca-pub-8717626936494496"
+        slot="8682321361"
+        style={{ display: 'block' }}
+        layout="in-article"
+        format="auto"
+      />
+      <Container className="home-container">
+        <h1>IMIONA DLA ZWIERZAKÓW</h1>
+        <ul className="name-list">
+          {selectedNames.map((name, index) => (
+            <li key={index}>{name}</li>
+          ))}
+        </ul>
+        <Button variant="primary" className="generate-btn" onClick={selectRandomNames}>
+          Losuj
+        </Button>
+      </Container>
+    </>
   );
 };
 
